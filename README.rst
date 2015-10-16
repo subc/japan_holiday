@@ -1,6 +1,9 @@
 Holiday in Japan from Google Calendar
 ====================================================
 
+日本の祝日一覧を取得するライブラリ
+
+
 Features
 --------
 - 10000 call within 1 seconds
@@ -49,3 +52,4 @@ Documentation
 
 .. _`GoogleAPI token`: http://www.php-factory.net/calendar_form/google_api.php
 .. _`White Paper`: http://www.php-factory.net/calendar_form/google_api.php
+
