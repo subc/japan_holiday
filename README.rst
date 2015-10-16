@@ -1,13 +1,22 @@
 japan_holiday:holiday in japan from Google Calendar
-=========================
+====================================================
 
-## Features
-10000 call within 1 seconds
+Features
+--------
+- 10000 call within 1 seconds
 
-## Installation
-    pip install japan_holiday
+Installation
+-----------------
 
-## Sample Code
+.. code-block:: bash
+
+    $ pip install japan_holiday
+
+Sample Code
+-----------------
+
+.. code-block:: python
+
     # 今日が祝日か判定(today is holiday)
     import JapaneHoliday
     JapanHoliday(google_api_token).today()
@@ -29,9 +38,14 @@ japan_holiday:holiday in japan from Google Calendar
 
     # test
     py.test ./tests.py
+    ...
 
-## Documentation
-Google API Token See: [GoogleカレンダーAPIキーの取得手順](http://www.php-factory.net/calendar_form/google_api.php)
+Documentation
+-----------------
 
-more infomation
+- get `GoogleAPI token`_
 
+- `White Paper`_ in Qiita
+
+.. _`GoogleAPI token`: http://www.php-factory.net/calendar_form/google_api.php
+.. _`White Paper`: http://www.php-factory.net/calendar_form/google_api.php
