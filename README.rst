@@ -1,4 +1,4 @@
-japan_holiday:holiday in japan from Google Calendar
+holiday in japan from Google Calendar
 ====================================================
 
 Features
