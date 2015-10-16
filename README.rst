@@ -1,7 +1,7 @@
 Holiday in Japan from Google Calendar
 ====================================================
 
-日本の祝日一覧を取得するライブラリ
+Python 日本の祝日一覧を取得するライブラリ
 
 
 Features
