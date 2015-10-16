@@ -7,3 +7,5 @@ build/
 .idea/
 venv
 sysdic
+.cache
+*.egg-info/
