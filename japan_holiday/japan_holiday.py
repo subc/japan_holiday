@@ -20,14 +20,14 @@ class JapanHoliday(object):
 
     def today(self, weekend=False):
         """
-        examine today
+        today is holiday
         :rtype : bool
         """
         return self.check(now=datetime.datetime.now().date(), weekend=weekend)
 
     def check(self, now=None, weekend=False):
         """
-        examine holiday
+        the chosen day is holiday
         :type now: datetime.datetime or datetime.date
         :type weekend: bool
         :rtype : bool
