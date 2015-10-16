@@ -22,6 +22,7 @@ Sample Code
 
     # 今日が祝日か判定(today is holiday)
     from japan_holiday import JapanHoliday
+    google_api_token = "###################"
     JapanHoliday(google_api_token).today()
     >>>False
 

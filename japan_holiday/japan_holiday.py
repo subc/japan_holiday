@@ -12,6 +12,10 @@ class JapanHoliday(object):
     _CACHE_CALENDER = {}
 
     def __init__(self, token):
+        """
+        :param token: str
+        """
+
         self._token = token
 
     @property
