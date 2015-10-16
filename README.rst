@@ -51,5 +51,5 @@ Documentation
 - `White Paper`_ in Qiita
 
 .. _`GoogleAPI token`: http://www.php-factory.net/calendar_form/google_api.php
-.. _`White Paper`: http://www.php-factory.net/calendar_form/google_api.php
+.. _`White Paper`: http://qiita.com/haminiku/items/3c8f0d43d82c0d58d7da
 
