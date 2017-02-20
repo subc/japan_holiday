@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from __future__ import absolute_import, unicode_literals
+from __future__ import absolute_import, unicode_literals, print_function
 import datetime
 import requests
 import json
@@ -80,18 +80,18 @@ class JapanHoliday(object):
             "{}-01-01T00:00:00Z".format(year + 1)
         )
         response = requests.get(url)
-        print url
+        print(url)
 
         if response.status_code != 200:
-            raise ConnectionError, ConnectionError.message
+            raise ConnectionError(ConnectionError.message)
 
         _json = json.loads(response.text)
         if 'items' not in _json:
-            raise JsonParseError, JsonParseError.message
+            raise JsonParseError(JsonParseError.message)
         result = [CalenderHoliday(item) for item in _json.get('items')]
 
         if len(result) < 2:
-            raise CalenderDoesNotExistError, CalenderDoesNotExistError.message
+            raise CalenderDoesNotExistError(CalenderDoesNotExistError.message)
 
         return result
 
