@@ -21,7 +21,7 @@ setup(
     license='MIT License',
     zip_safe=False,
     keywords=['holiday', 'japan_holiday'],
-    classifiers=(
+    classifiers=[
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.6',
@@ -29,5 +29,5 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4'
-    ),
+    ],
 )

@@ -80,9 +80,9 @@ class JapanHoliday(object):
             "{}-01-01T00:00:00Z".format(year + 1)
         )
         response = requests.get(url)
-        print(url)
 
         if response.status_code != 200:
+            print(url)
             raise ConnectionError(ConnectionError.message)
 
         _json = json.loads(response.text)
