@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-from __future__ import absolute_import, unicode_literals
+from __future__ import absolute_import, unicode_literals, print_function
+from builtins import range
 import pytest
 from pit import Pit
 from japan_holiday import JapanHoliday
@@ -29,7 +30,7 @@ def test_japan_holiday():
 
     # 10000call Within 1 second
     ts = time.time()
-    for x in xrange(10000):
+    for x in range(10000):
         JapanHoliday(token).check(now=datetime.datetime(2016, random.randint(1, 12), 2, 0, 0, 0))
     te = time.time()
     assert te - ts < 1, te - ts

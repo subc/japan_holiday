@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from __future__ import absolute_import, unicode_literals
+from __future__ import absolute_import, unicode_literals, print_function
 import datetime
 import requests
 import json
@@ -82,6 +82,7 @@ class JapanHoliday(object):
         response = requests.get(url)
 
         if response.status_code != 200:
+            print(url)
             raise ConnectionError(ConnectionError.message)
 
         _json = json.loads(response.text)
